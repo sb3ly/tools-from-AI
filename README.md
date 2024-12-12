@@ -1,183 +1,161 @@
-# 🔐 Email Guessing Tool
+# 🔐 AI Tools Collection
 
-## 📝 Description
-This tool is designed to discover whether an email is associated with an account on the target website by attempting to guess the verification codes associated with accounts using various methods. It can be used to test how the system handles verification codes in account recovery pages.
+## 📝 Description (English)
+Welcome to the **AI Tools Collection** repository!  
+This repository contains a variety of tools that leverage **Artificial Intelligence (AI)** for different purposes. These tools cover a broad range of categories including **Cybersecurity**, **Malware Development**, **Automation**, and **Daily Productivity**. Each tool is designed for specific use cases to assist researchers, developers, and individuals in their professional and personal workflows.
+
+Please ensure that you use these tools **legally** and **ethically**, respecting local laws and regulations related to testing and security.
+
+---
 
 ## ⚠️ Legal Disclaimer
-- **Use of the Tool Legally**: You must ensure that you are using this tool in a test environment with explicit permission from the website owner.
-- **Ethical Use**: Ensure that you use the tool ethically for research or educational purposes only.
-- **Compliance with Local Laws**: Before using the tool on any website, make sure you have permission to test it.
-  
-**Warning**: Unauthorized use of this tool on any website without explicit permission is illegal and unethical. You are solely responsible for your actions when using this tool.
+- **Legal and Ethical Use**: Ensure that you have explicit permission before using any security tool on a system.
+- **Compliance**: Always comply with local laws and regulations for security testing.
+- **For Research and Educational Purposes**: These tools are meant to assist in research, education, and improving productivity. Unauthorized use on systems is illegal and unethical.
 
-## 🛠️ How to Use
+---
 
-### Requirements:
-- Python 3.x
-- Required Python libraries:
-  ```bash
-  pip install requests beautifulsoup4
-  ```
+## 🛠️ Tools List:
 
-### Setup Steps:
-1. **Download the Tool**:
-   - Clone the repository or download the source files directly from GitHub.
+### 🔐 **Cybersecurity Tools**
+These tools are developed for use in **penetration testing**, **vulnerability scanning**, and **ethical hacking**. They help in identifying weaknesses and testing the security of various systems.
 
-2. **Prepare the Email File**:
-   - Create a text file (`emails.txt`) containing the list of emails you want to test. Each email should be on a new line.
+---
 
-3. **Configure the Tool**:
-   - In the script, modify the `url` and `headers` variables to match the target website's settings. Make sure to set the correct target URL and adjust any necessary headers like User-Agent, Content-Type, etc.
+### 💻 **Malware Development Tools**
+These tools are developed to help researchers and cybersecurity professionals in the creation and analysis of malicious software (malware) for educational purposes, vulnerability testing, and research.
 
-4. **Run the Tool**:
-   - Run the script via the following command in your terminal:
+---
+
+### 🛠️ **Automation Tools**
+These tools are designed to help you automate daily tasks like file management, backups, or system monitoring.
+
+---
+
+### 🌐 **Web Scraping and Information Gathering Tools**
+These tools help in gathering data from websites for research, analysis, and competitive intelligence purposes.
+
+---
+
+### 📅 **Daily Productivity Tools**
+In addition to security and data-related tools, this section includes tools that can help improve your daily workflow and productivity.
+
+---
+
+### 🚀 Setup Steps:
+1. **Clone the Repository**:
+   - Clone the repository or download the source files directly:
      ```bash
-     python mail.py
+     git clone https://github.com/sb3ly/tools-from-AI
      ```
 
-### Viewing Results:
-- When the tool finds valid codes for any email, it will display results like this:
-  ```
-  [SUCCESS] Valid code found:
-  Email: example@example.com, Valid Code: 1234
-  ```
-  
-- If no valid codes are found, the output will indicate failure:
-  ```
-  [FAILED] No valid code found.
-  ```
 
-### Important Messages:
-- **[INFO]**: General information or status messages.
-- **[ERROR]**: Errors encountered, such as connection issues or invalid responses.
-- **[VALID CODE FOUND]**: A valid code has been found for an email address.
-- **[INVALID]**: The guessed code is invalid for the given email.
-- **[NO RESPONSE]**: The target server did not respond as expected for a particular guess.
+---
 
-## 📋 Key Functions in the Code:
 
-1. **`check_code()`**:
-   - This function checks the validity of a guessed code for a given email by sending a POST request to the target website. If a valid response is received (e.g., JSON response with success or error messages), it processes and prints the result accordingly.
+## 🤝 Contributing:
+If you'd like to contribute to this project, feel free to fork the repository, create a pull request, and suggest any improvements or new tools you think would be useful for the community.
 
-2. **`guess_codes()`**:
-   - This function manages the code-guessing process. It attempts every code from 1000 to 9999, sending requests for each code to the target URL and checking the response. If a valid code is found, it is added to the list of valid codes and printed.
+---
 
-3. **`check_website()`**:
-   - Verifies that the target website is up and running. It sends a simple GET request to the specified URL and checks if the response status is 200 (OK). If the website is down or inaccessible, the script will exit.
+## 🚨 Important Warnings:
+- **Legal Use**: Always ensure you have explicit permission to test or analyze any system with the security tools.
+- **No Malicious Use**: Do not use any tool for malicious purposes.
+- **Respect Privacy**: Respect the privacy and confidentiality of the systems you interact with.
 
-4. **`load_emails_from_file()`**:
-   - This function loads the emails from a text file (`emails.txt`). It reads each line as a separate email address and stores them in a list for further processing. If the file is not found or cannot be read, an error is printed.
+---
 
-## 🏆 Tool Results:
-- If valid codes are found, the email and the valid code will be displayed in the terminal:
-  ```
-  [SUCCESS] Valid code found:
-  Email: example@example.com, Valid Code: 1234
-  The web page code will be shown to you
-  ```
+**Thank you for exploring the AI Tools Collection!**  
+We hope these tools help you in your **Cybersecurity**, **Malware Development**, and **Daily Productivity** tasks. For support, please reach out through the **Issues** section of the repository.
 
-- If no valid codes are found after all attempts, a failure message will be displayed:
-  ```
-  [FAILED] No valid code found.
-  ```
+---
+
+## 🌐 Links:
+- [Official X](https://x.com/sb3ly)
+- [GitHub Repository](https://github.com/sb3ly/)
+
+---
+
+🔒 **Stay Safe and Innovate with AI!**
+
+---
+
+# 🔐 مجموعة أدوات الذكاء الاصطناعي
+
+## 📝 الوصف (العربية)
+مرحبًا بكم في مستودع **مجموعة أدوات الذكاء الاصطناعي**!  
+يحتوي هذا المستودع على مجموعة متنوعة من الأدوات التي تستخدم **الذكاء الاصطناعي (AI)** لأغراض متعددة. تشمل الأدوات مجموعة واسعة من الفئات بما في ذلك **الأمن السيبراني**، **تطوير البرمجيات الخبيثة**، **التشغيل الآلي**، و **الإنتاجية اليومية**. تم تصميم كل أداة لتلبية احتياجات معينة لمساعدة الباحثين والمطورين والأفراد في سير عملهم المهني والشخصي.
+
+يرجى التأكد من استخدام هذه الأدوات **بشكل قانوني** و **أخلاقي**، مع احترام القوانين واللوائح المحلية المتعلقة بالاختبار والأمن.
+
+---
+
+## ⚠️ إخلاء المسؤولية القانونية
+- **الاستخدام القانوني والأخلاقي**: تأكد من الحصول على إذن صريح قبل استخدام أي أداة أمنية على أي نظام.
+- **الامتثال**: احترم دائمًا القوانين واللوائح المحلية لاختبار الأمان.
+- **للأغراض البحثية والتعليمية**: تم تصميم هذه الأدوات للمساعدة في البحث والتعليم وتحسين الإنتاجية. الاستخدام غير المصرح به على الأنظمة غير قانوني وغير أخلاقي.
+
+---
+
+## 🛠️ قائمة الأدوات:
+
+### 🔐 **أدوات الأمن السيبراني**
+تم تطوير هذه الأدوات للاستخدام في **اختبار الاختراق**، **مسح الثغرات**، و **الاختراق الأخلاقي**. تساعد في تحديد نقاط الضعف واختبار أمان الأنظمة المختلفة.
+
+---
+
+### 💻 **أدوات تطوير البرمجيات الخبيثة**
+تم تطوير هذه الأدوات لمساعدة الباحثين والمتخصصين في الأمن السيبراني في إنشاء وتحليل البرمجيات الخبيثة (Malware) لأغراض تعليمية واختبار الثغرات والبحث.
 
 
 ---
 
-**Note**: This tool was developed using Python and leverages libraries such as `requests` and `BeautifulSoup` to parse the website's responses. It is essential to use this tool responsibly and only on systems that you have explicit permission to test.
+### 🛠️ **أدوات التشغيل الآلي**
+تم تصميم هذه الأدوات لمساعدتك في أتمتة المهام اليومية مثل إدارة الملفات، والنسخ الاحتياطي، أو مراقبة النظام.
+
+
 
 ---
 
-Thank you for using this tool, and feel free to provide feedback or ask questions via the Issues section of the repository.
+### 🌐 **أدوات جمع المعلومات واستخراج البيانات من الإنترنت**
+هذه الأدوات تساعد في جمع البيانات من المواقع الإلكترونية للأبحاث والتحليل والاستخبارات التنافسية.
+
 
 ---
 
-# 🔐 أداة تخمين الإيميل
+### 📅 **أدوات الإنتاجية اليومية**
+بالإضافة إلى الأدوات الخاصة بالأمن والبيانات، تتضمن هذه الفئة أدوات يمكن أن تساعد في تحسين سير العمل والإنتاجية اليومية.
 
-## 📝 الوصف
-تم تصميم هذه الأداة لاكتشاف ما إذا كان الإيميل مرتبطًا بحساب على الموقع المستهدف من خلال محاولة تخمين الرموز المرتبطة بالحسابات باستخدام طرق مختلفة. يمكن استخدامها لاختبار كيفية تعامل النظام مع الرموز في صفحات استرجاع الحساب.
 
-## ⚠️ التنبيه القانوني
-- **استخدام الأداة بشكل قانوني**: يجب التأكد من أنك تستخدم هذه الأداة في بيئة اختبار وبإذن صريح من مالك الموقع.
-- **الاستخدام الأخلاقي**: تأكد من استخدام الأداة بطريقة أخلاقية لأغراض البحث أو التعليم فقط.
-- **الامتثال للقوانين المحلية**: قبل استخدام الأداة على أي موقع، تأكد من أنك حصلت على إذن لاختباره.
+---
 
-**تحذير**: الاستخدام غير المصرح به لهذه الأداة على أي موقع دون إذن صريح هو غير قانوني وغير أخلاقي. أنت المسؤول الوحيد عن أفعالك عند استخدام هذه الأداة.
+### 🚀 خطوات الإعداد:
 
-## 🛠️ كيفية الاستخدام
-
-### المتطلبات:
-- Python 3.x
-- المكتبات المطلوبة:
-  ```bash
-  pip install requests beautifulsoup4
-  ```
-
-### خطوات الإعداد:
-1. **تنزيل الأداة**:
-   - قم باستنساخ المستودع أو تحميل ملفات المصدر مباشرة من GitHub.
-
-2. **تحضير ملف الإيميلات**:
-   - قم بإنشاء ملف نصي (`emails.txt`) يحتوي على قائمة الإيميلات التي ترغب في اختبارها. يجب أن يكون كل إيميل في سطر جديد.
-
-3. **تكوين الأداة**:
-   - في السكربت، قم بتعديل متغيرات `url` و `headers` لتتناسب مع إعدادات الموقع المستهدف. تأكد من تعيين الرابط الصحيح وضبط أي رؤوس ضرورية مثل `User-Agent` و `Content-Type` إلخ.
-
-4. **تشغيل الأداة**:
-   - قم بتشغيل السكربت عبر الأمر التالي في الطرفية:
+1. **استنساخ المستودع**:
+   - استنساخ المستودع أو تحميل الملفات المصدرية مباشرة:
      ```bash
-     python mail.py
+     git clone https://github.com/sb3ly/tools-from-AI.git
      ```
 
-### مشاهدة النتائج:
-- عندما تجد الأداة الرموز الصالحة لأي إيميل، ستعرض النتائج على النحو التالي:
-  ```
-  [SUCCESS] تم العثور على رمز صالح:
-  البريد الإلكتروني: example@example.com، الرمز الصالح: 1234
-  ```
+---
 
-- إذا لم يتم العثور على أي رموز صالحة، ستعرض الأداة رسالة فشل:
-  ```
-  [FAILED] لم يتم العثور على أي رمز صالح.
-  ```
-
-### الرسائل الهامة:
-- **[INFO]**: رسائل معلوماتية أو حالة.
-- **[ERROR]**: الأخطاء التي تم اكتشافها، مثل مشاكل الاتصال أو الاستجابات غير الصالحة.
-- **[VALID CODE FOUND]**: تم العثور على رمز صالح لإيميل.
-- **[INVALID]**: الرمز الذي تم تخمينه غير صالح للإيميل المحدد.
-- **[NO RESPONSE]**: لم تستجب الخوادم المستهدفة بالطريقة المتوقعة في تخمين معين.
-
-## 📋 الوظائف الرئيسية في الكود:
-
-1. **`check_code()`**:
-   - تقوم هذه الوظيفة بالتحقق من صلاحية الرمز المخمن لإيميل معين من خلال إرسال طلب POST إلى الموقع المستهدف. إذا تم الحصول على استجابة صالحة (على سبيل المثال، استجابة JSON تحتوي على رسائل نجاح أو خطأ)، يتم معالجتها وطباعتها وفقًا لذلك.
-
-2. **`guess_codes()`**:
-   - تقوم هذه الوظيفة بإدارة عملية تخمين الرموز. تحاول كل رمز من 1000 إلى 9999، وتقوم بإرسال طلبات لكل رمز إلى الرابط المستهدف وتتحقق من الاستجابة. إذا تم العثور على رمز صالح، تتم إضافته إلى قائمة الرموز الصالحة ويتم طباعته.
-
-3. **`check_website()`**:
-   - تتحقق من أن الموقع المستهدف يعمل بشكل صحيح. يتم إرسال طلب GET بسيط إلى الرابط المحدد والتحقق من أن حالة الاستجابة هي 200 (OK). إذا كان الموقع غير متاح أو لا يمكن الوصول إليه، سيتم إنهاء السكربت.
-
-4. **`load_emails_from_file()`**:
-   - تقوم هذه الوظيفة بتحميل الإيميلات من ملف نصي (`emails.txt`). تقرأ كل سطر كعنوان إيميل منفصل وتخزنه في قائمة للمعالجة اللاحقة. إذا لم يتم العثور على الملف أو لم يتمكن من قراءته، سيتم طباعة رسالة خطأ.
-
-## 🏆 نتائج الأداة:
-- إذا تم العثور على رموز صالحة، سيتم عرض الإيميل والرمز الصالح في الطرفية:
-  ```
-  [SUCCESS] تم العثور على رمز صالح:
-  البريد الإلكتروني: example@example.com، الرمز الصالح: 1234
-  ```سيتم عرض رمز صفحة الويب لك 
-
-- إذا لم يتم العثور على أي رموز صالحة بعد كل المحاولات، سيتم عرض رسالة فشل:
-  ```
-  [FAILED] لم يتم العثور على أي رمز صالح.
-  ```
+## 🚨 تحذيرات مهمة:
+- **الاستخدام القانوني**: تأكد دائمًا من الحصول على إذن صريح لاختبار أو تحليل أي نظام باستخدام الأدوات الأمنية.
+- **عدم الاستخدام الضار**: لا تستخدم أي أداة لأغراض ضارة.
+- **احترام الخصوصية**: احترم خصوصية وسرية الأنظمة التي تتعامل معها.
 
 ---
 
-**ملاحظة**: تم تطوير هذه الأداة باستخدام Python وتستفيد من مكتبات مثل `requests` و `BeautifulSoup` لتحليل استجابات الموقع. من المهم استخدام هذه الأداة بشكل مسؤول وفقط على الأنظمة التي لديك إذن لاختبارها.
+**شكرًا لاستكشاف مجموعة أدوات الذكاء الاصطناعي!**  
+نأمل أن تساعدك هذه الأدوات في مهامك المتعلقة بـ **الأمن السيبراني** و **تطوير البرمجيات الخبيثة** و **الإنتاجية اليومية**. للحصول على الدعم، يرجى الوصول من خلال قسم **المشاكل** في المستودع.
 
 ---
 
-شكرًا لاستخدامك هذه الأداة، ولا تتردد في تقديم تعليقاتك أو طرح أسئلتك عبر قسم المشاكل في المستودع.
+## 🌐 الروابط:
+- [الموقع الرسمي](https://yourwebsite.com)
+- [مستودع GitHub](https://github.com/yourusername/ai-tools-collection)
+
+---
+
+🔒 **ابق آمنًا وابتكر مع الذكاء الاصطناعي!**
+  
