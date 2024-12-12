@@ -1,4 +1,4 @@
-# 🔐 Code Guessing Tool
+# 🔐 Email Guessing Tool
 
 ## 📝 Description
 This tool is designed to discover whether an email is associated with an account on the target website by attempting to guess the verification codes associated with accounts using various methods. It can be used to test how the system handles verification codes in account recovery pages.
@@ -92,7 +92,7 @@ Thank you for using this tool, and feel free to provide feedback or ask question
 
 ---
 
-# 🔐 أداة تخمين الرموز
+# 🔐 أداة تخمين الإيميل
 
 ## 📝 الوصف
 تم تصميم هذه الأداة لاكتشاف ما إذا كان الإيميل مرتبطًا بحساب على الموقع المستهدف من خلال محاولة تخمين الرموز المرتبطة بالحسابات باستخدام طرق مختلفة. يمكن استخدامها لاختبار كيفية تعامل النظام مع الرموز في صفحات استرجاع الحساب.
