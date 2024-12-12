@@ -32,7 +32,7 @@ This tool is designed to discover whether an email is associated with an account
 4. **Run the Tool**:
    - Run the script via the following command in your terminal:
      ```bash
-     python code_guessing_tool.py
+     python mail.py
      ```
 
 ### Viewing Results:
@@ -126,7 +126,7 @@ Thank you for using this tool, and feel free to provide feedback or ask question
 4. **تشغيل الأداة**:
    - قم بتشغيل السكربت عبر الأمر التالي في الطرفية:
      ```bash
-     python code_guessing_tool.py
+     python mail.py
      ```
 
 ### مشاهدة النتائج:
