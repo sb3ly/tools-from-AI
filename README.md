@@ -81,7 +81,7 @@ This tool is designed to discover whether an email is associated with an account
   [FAILED] No valid code found.
   ```
 
-## 🤝 Contributing:
+
 ---
 
 **Note**: This tool was developed using Python and leverages libraries such as `requests` and `BeautifulSoup` to parse the website's responses. It is essential to use this tool responsibly and only on systems that you have explicit permission to test.
@@ -174,7 +174,6 @@ Thank you for using this tool, and feel free to provide feedback or ask question
   [FAILED] لم يتم العثور على أي رمز صالح.
   ```
 
-## 🤝 المساهمة:
 ---
 
 **ملاحظة**: تم تطوير هذه الأداة باستخدام Python وتستفيد من مكتبات مثل `requests` و `BeautifulSoup` لتحليل استجابات الموقع. من المهم استخدام هذه الأداة بشكل مسؤول وفقط على الأنظمة التي لديك إذن لاختبارها.
